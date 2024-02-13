@@ -1,5 +1,5 @@
-#ifndef _J1939TYRE_H_
-#define _J1939TYRE_H_
+#ifndef _J1939TMPS_H_
+#define _J1939TMPS_H_
 
 #include "N2kMsg.h"
 #include "N2kTypes.h"
