@@ -13,6 +13,7 @@ var group__group__msg_set_up =
     [ "AppendN2kPGN130074", "group__group__msg_set_up.html#gadcad876e1fee14b6483a55b897b1e63e", null ],
     [ "AppendN2kRouteWPInfo", "group__group__msg_set_up.html#gaaff098b870269249ab241a565686c7d6", null ],
     [ "AppendN2kWaypointList", "group__group__msg_set_up.html#gacded62f9c66de2dbb20014e95904d70a", null ],
+    [ "ParseJ1939PGN65268", "group__group__msg_set_up.html#ga716be054167aa3c68da338606c95446a", null ],
     [ "ParseN2kSwitchbankControl", "group__group__msg_set_up.html#ga3deda7379e68d524a73dae453614dac0", null ],
     [ "SetN2kAISAtoNReport", "group__group__msg_set_up.html#ga6d04371e60b892fbf0e0e699b4c8df1a", null ],
     [ "SetN2kAISClassAPosition", "group__group__msg_set_up.html#gadff42bc5a7cfd04237b7e094441a71c8", null ],

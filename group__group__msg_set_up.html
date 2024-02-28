@@ -157,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:gacded62f9c66de2dbb20014e95904d70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a Waypoint to Message "Route and WP Service - WP List - 
        WP Name &amp; Position" - PGN 130074.  <a href="group__group__msg_set_up.html#gacded62f9c66de2dbb20014e95904d70a">More...</a><br /></td></tr>
 <tr class="separator:gacded62f9c66de2dbb20014e95904d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga716be054167aa3c68da338606c95446a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__msg_set_up.html#ga716be054167aa3c68da338606c95446a">ParseJ1939PGN65268</a> (const <a class="el" href="classt_n2k_msg.html">tN2kMsg</a> &amp;N2kMsg, uint8_t &amp;TyrePosition, double &amp;TyrePressure, double &amp;TyreTemperature, <a class="el" href="_j1939_t_p_m_s_8h.html#aa108cf742e809a6dbdbc16776919e1e5">tCTISensorStatus</a> &amp;CTISensorStatus, <a class="el" href="_j1939_t_p_m_s_8h.html#a4afc43e243d453dc9e59e65926a84fc2">tCTITyreStatus</a> &amp;CTITyreStatus, <a class="el" href="_j1939_t_p_m_s_8h.html#aa589275643ad45fef373afd95cea536c">tCTITerminalStatus</a> &amp;CTITerminalStatus, double &amp;AirLeakageRate, <a class="el" href="_j1939_t_p_m_s_8h.html#a06b63c0e1ba1f820f970abab5314e2e3">tCTIPressureAlertStatus</a> &amp;CTIPressureAlertStatus)</td></tr>
+<tr class="memdesc:ga716be054167aa3c68da338606c95446a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing J1939 PGN 65268 TyrePal TPMS".  <a href="group__group__msg_set_up.html#ga716be054167aa3c68da338606c95446a">More...</a><br /></td></tr>
+<tr class="separator:ga716be054167aa3c68da338606c95446a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3deda7379e68d524a73dae453614dac0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__msg_set_up.html#ga3deda7379e68d524a73dae453614dac0">ParseN2kSwitchbankControl</a> (const <a class="el" href="classt_n2k_msg.html">tN2kMsg</a> &amp;N2kMsg, unsigned char &amp;TargetBankInstance, <a class="el" href="_n2k_messages_8h.html#ac02a3f47ffdbeaec255d7aafe1b32713">tN2kBinaryStatus</a> &amp;BankStatus)</td></tr>
 <tr class="memdesc:ga3deda7379e68d524a73dae453614dac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse PGN 127502 "Switch Bank Control" message.  <a href="group__group__msg_set_up.html#ga3deda7379e68d524a73dae453614dac0">More...</a><br /></td></tr>
 <tr class="separator:ga3deda7379e68d524a73dae453614dac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -805,6 +808,90 @@ false aborted </dd></dl>
 <p >Alias of PGN 130074. This alias was introduced to improve the readability of the source code. See parameter details on <a class="el" href="group__group__msg_set_up.html#gadcad876e1fee14b6483a55b897b1e63e">AppendN2kPGN130074</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_n2k_messages_8h_source.html#l04669">4669</a> of file <a class="el" href="_n2k_messages_8h_source.html">N2kMessages.h</a>.</p>
+
+</div>
+</div>
+<a id="ga716be054167aa3c68da338606c95446a" name="ga716be054167aa3c68da338606c95446a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga716be054167aa3c68da338606c95446a">&#9670;&nbsp;</a></span>ParseJ1939PGN65268()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParseJ1939PGN65268 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classt_n2k_msg.html">tN2kMsg</a> &amp;&#160;</td>
+          <td class="paramname"><em>N2kMsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>TyrePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>TyrePressure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>TyreTemperature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_j1939_t_p_m_s_8h.html#aa108cf742e809a6dbdbc16776919e1e5">tCTISensorStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>CTISensorStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_j1939_t_p_m_s_8h.html#a4afc43e243d453dc9e59e65926a84fc2">tCTITyreStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>CTITyreStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_j1939_t_p_m_s_8h.html#aa589275643ad45fef373afd95cea536c">tCTITerminalStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>CTITerminalStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>AirLeakageRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_j1939_t_p_m_s_8h.html#a06b63c0e1ba1f820f970abab5314e2e3">tCTIPressureAlertStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>CTIPressureAlertStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parsing J1939 PGN 65268 TyrePal TPMS". </p>
+<p >???.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">TyrePosition</td><td>??? </td></tr>
+    <tr><td class="paramname">TyrePressure</td><td>Tyre pressure in Pa. </td></tr>
+    <tr><td class="paramname">TyreTemperature</td><td>Tyre temperature in K. ... </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_j1939_t_m_p_s_8cpp_source.html#l00004">4</a> of file <a class="el" href="_j1939_t_m_p_s_8cpp_source.html">J1939TMPS.cpp</a>.</p>
 
 </div>
 </div>
